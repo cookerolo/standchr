@@ -6,4 +6,7 @@ Otherwise it returns false.
 
 Done with Google Spreadsheets in mind.
 
+# replaceSpace
+Function to replace blank spaces for undeerscore, delete "the" or "of" or text between "()" substring and concatenate some cell value.
+
 
