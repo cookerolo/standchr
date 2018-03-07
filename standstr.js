@@ -30,11 +30,11 @@ function createTabs() {
           ss.setActiveSheet(ss.getSheets()[0]);
           sh.getRange("D"+(i+1)).setValue(new Date());
         } catch(e) {
-          message.push("row " + (i+1));        
+          message.push(" "+rData[i][2]);        
         }    
        }
      }
-     ss.toast("These sheets already exist: " + message);
+     (message.length > 0) ? ss.toast("These sheets already exist: " + message, "Warning", 5) : ss.toast("All sheet were added") ;
      ss.setActiveSheet(ss.getSheets()[0]);
    } else {
       return;
